@@ -104,12 +104,12 @@ function populateMobile(obj)
         buttonContainer.removeChild(buttonContainer.firstElementChild);
     }
 
-    for(let i = 0; i < obj.images.length; i++)
+    for(let i = -1; i < obj.images.length; i++)
     {
         let div = document.createElement("div");
         div.setAttribute("class","circle");
         div.addEventListener("click", ()=>{
-            if(i==0){
+            if(i==-1){
                 mobileContainer.style.backgroundColor="#3282B8";
                 mobileContent.style.display="block";
                 selectedImage.style.display = "none";
