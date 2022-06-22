@@ -1,0 +1,202 @@
+<html>
+
+<head>
+
+   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+   <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+   <div class="container">
+      <nav class="navbar navbar-expand-sm " id="navbar-custom">
+         <a class="navbar-brand logo" href="#"><img src="./images/port1.svg" /></a>
+         <span class="logo-text">Portfolio</span>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+               <a class="nav-link active" href="#">Home</a>
+               <a class="nav-link" href="#">Story</a>
+               <a class="nav-link" href="#">Projects</a>
+            </div>
+            <a href="#" class="badge-pill ml-auto"
+               style="text-decoration:none; font-size: 30px;" id="resume-button">Resume <img src="./images/download.svg" style="height:35px; color:white;"/></a>
+         </div>
+      </nav>
+      <div class="custom-modal" id="custom-modal">
+         <img src="./images/close.svg" class="close-icon" data-action="close" />
+         <div class="row" style="height:100%;">
+            <div class="col d-flex justify-content-center align-items-center">
+               <div class="custom-modal-content-left">
+                  <h2>Jadar</h2>
+                  <p>Jadar is a well designed contact management system. Users can create, read, update, and delete users from a database.</p>
+                  <p class="text-bold">Frontend code:</p>
+                  <p>HTML, CSS, JavaScript, and Bootstrap</p>
+                  <p class="text-bold">Backend code:</p>
+                  <p>PHP</p>
+               </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+               <div class="custom-modal-content-right">
+                  <img src="./images/jadar.png" id="selected-image" style="width:500px; height:500px; object-fit:contain;" />
+                  <div class="thumbnail-container" id="thumbnail-container">
+                     <div class="circle"></div>
+                     <div class="circle"></div>
+                     <div class="circle"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h2>Richard Gullo</h2>
+            <h3>Web Developer</h2>
+               <p>I am a computer science student at the University of Central Florida. I have experience coding in
+                  various programming languages but mostly specialize in web development.</p>
+               </p>
+         </div>
+         <div class="col">
+            <img src="./images/richard.jpg" style="width:400px; height:400px; object-fit:contain;" />
+         </div>
+
+      </div>
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h2>Story</h2>
+            <p>My passion for programmming started in high school. My parents would give me
+               two dollars a day for lunch and over time I would save up to 40 dollars to buy my
+               first programming book. The book I chose was in JavaScript because I read online that it
+               was a good beginner language. I would read this book during my lunch period and
+               thought it was really cool that you could write instructions into a computer and
+               then have those instructions turn into something that you see on the screen. As I
+               gained more experience in coding, I notice that I started to incorporate concepts
+               I learned from my classes into coding, such as two dimensional motion in physics. This interest and
+               passion
+               eventually lead me to major in computer science and then to pursue a career as a web developer.</p>
+            </p>
+
+         </div>
+
+      </div>
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h2>Projects</h2>
+            <h3>HTML/CSS/JavaScript/Bootstrap/Electron</h3>
+            <div class="project-content">
+               <div class="image-container">
+                  <img src="./images/jadar.png" />
+                  
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="0"></div>
+                     <p>Jadar</p>
+                     <p>Contact Management System</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+               <div class="image-container">
+                  <img src="./images/autograder.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="1"></div>
+                     <p>Autograder</p>
+           
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+ 
+            </div>
+         </div>
+
+      </div>
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h3>React / React Native</h3>
+            <div class="project-content">
+               <div class="image-container">
+                  <img src="./images/flower-power-mobile.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="4"></div>
+                     <p>Flower Power</p>
+                     <p>Mobile</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+               <div class="image-container">
+                  <img src="./images/flower-power-web.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="5"></div>
+                     <p>Flower Power</p>
+                     <p>Web</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+               <div class="image-container">
+                  <img src="./images/api-sandbox.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="3"></div>
+                     <p>API Sandbox</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h3>WordPress</h3>
+            <div class="project-content">
+               <div class="image-container">
+                  <img src="./images/danny-yogurt.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="2"></div>
+                     <p>Danny's Yogurt</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="row" style="margin-top:20px;">
+         <div class="col">
+            <h3>C# / Unity</h3>
+            <div class="project-content">
+               <div class="image-container">
+                  <img src="./images/frozen-bottom0.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="6"></div>
+                     <p>Frozen Bottom Caves</p>
+                     <p>Video Game</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+               <div class="image-container">
+                  <img src="./images/dialogue1.png" />
+                  <div class="overlay-content">
+                     <div class="item-overlay" data-action="project" data-id="7"></div>
+                     <p>Console Dialogue System</p>
+                     <img src="./images/expand.svg" style="height:100px; padding:0px;" />
+                  </div>
+               </div>
+            </div>
+         </div>
+    
+
+
+      </div>
+   </div>
+
+
+
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+
+</html>

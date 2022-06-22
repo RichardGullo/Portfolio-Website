@@ -1,0 +1,181 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+
+p{
+  margin:0px;
+  font-size: 24px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.container{
+  padding-bottom: 50px;
+}
+
+body{
+  background-color: #1B262C;
+  color:white;
+}
+
+a{
+  font-size: 30px;
+}
+
+h2{
+  color:white;
+}
+
+h3{
+  color:#BBE1FA
+}
+
+.navbar-brand img{
+  height: 60px;
+  fill:white;
+}
+
+.navbar .logo-text{
+  font-size: 60px;
+  color:white; 
+}
+
+#navbar{
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+#navbar-custom {
+  background-color: #1B262C;
+}
+
+.navbar-nav a{
+  color:white;
+}
+
+.navbar-nav a:hover{
+  text-decoration: underline;
+
+}
+
+#resume-button{
+  background-color: #BBE1FA;
+  color:black !important;
+}
+
+/* Project images and overlay */
+
+.project-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container{
+  position: relative;
+  height:100%;
+}
+
+.project-content img{
+  width:250px;
+  height:250px;
+  object-fit: contain;
+  padding:20px;
+  border:2px solid #475c6b;
+}
+
+.overlay-content{
+  opacity: 0;
+  background-color: rgba(50, 130, 184,0.5);
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: 105;
+}
+
+.item-overlay{
+  background-color: dodgerblue;
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index: 200;
+  background-color: rgba(50, 130, 184,0);
+}
+
+.overlay-content img{
+  border:none
+}
+
+.overlay-content:hover{
+  opacity: 1;
+}
+
+/* Popup Modal */
+
+.custom-modal{
+  position: fixed;
+  width:1200px;
+  height:700px;
+  background-color: #0F4C75;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 300;
+  border-radius: 15px;
+  display: none;
+}
+
+.custom-modal-content-left{
+  width:500px;
+  height:500px;
+  background-color: #3282B8;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.custom-modal-content-right{
+  position: relative;
+}
+
+.close-icon{
+  height:30px;
+  position: absolute;
+  right:5px;
+  top:5px;
+  cursor: pointer;
+  z-index: 301;
+}
+
+.thumbnail-container{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom:-30;
+  left:0;
+  width:500px;
+}
+
+.circle{
+  border-radius: 50%;
+  height:20px;
+  width:20px;
+  background-color: #BBE1FA;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.showItem{
+  display: block;
+}
