@@ -109,8 +109,6 @@ function populateModal(obj)
 
     let selectedImage = document.getElementById("selected-image");
 
-    let singleContent= document.querySelector(".single-modal-content");
-
     leftContent.innerHTML = `
                 <h2>${obj.title}</h2>
                   <p>${obj.description}</p>
@@ -118,17 +116,7 @@ function populateModal(obj)
                   <p>${obj.frontend}</p>
                   <p class="text-bold">Backend code:</p>
                   <p>${obj.backend}</p>
-    `;
-
-    singleContent.innerHTML = `
-    <h2>${obj.title}</h2>
-      <p>${obj.description}</p>
-      <p class="text-bold">Frontend code:</p>
-      <p>${obj.frontend}</p>
-      <p class="text-bold">Backend code:</p>
-      <p>${obj.backend}</p>
-`;
-
+    `
 
     selectedImage.setAttribute("src", obj.images[0]);
 
