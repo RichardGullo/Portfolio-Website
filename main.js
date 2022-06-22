@@ -1,5 +1,5 @@
 let customModal = document.getElementById("custom-modal");
-let buttonContainer = document.getElementById("thumbnail-container");
+
 
 function handeClick(evt){
 
@@ -28,6 +28,102 @@ function handeClick(evt){
 }
 
 document.addEventListener("click",handeClick);
+
+// Function to find entry with id
+function findEntry(id){
+    return data.filter((element)=>{
+        if(element.id == id)
+            return element;
+    });
+}
+
+// Function used to populate our modal
+function populateModal(obj)
+{
+    let leftContent = document.querySelector(".custom-modal-content-left");
+
+    let selectedImage = document.getElementById("selected-image");
+
+    let buttonContainer = document.getElementById("thumbnail-container");
+
+    leftContent.innerHTML = `
+                <h2>${obj.title}</h2>
+                  <p>${obj.description}</p>
+                  <p class="text-bold">Frontend code:</p>
+                  <p>${obj.frontend}</p>
+                  <p class="text-bold">Backend code:</p>
+                  <p>${obj.backend}</p>
+    `
+
+    selectedImage.setAttribute("src", obj.images[0]);
+
+
+    while(buttonContainer.firstElementChild){
+        buttonContainer.firstElementChild.replaceWith(buttonContainer.firstElementChild.cloneNode(true));
+        buttonContainer.removeChild(buttonContainer.firstElementChild);
+    }
+
+    for(let i = 0; i < obj.images.length; i++)
+    {
+        let div = document.createElement("div");
+        div.setAttribute("class","circle");
+        div.addEventListener("click", ()=>{
+            selectedImage.setAttribute("src",obj.images[i]);
+        });
+        buttonContainer.appendChild(div);
+    }
+
+    populateMobile(obj);
+
+}
+
+function populateMobile(obj)
+{
+    let mobileContent = document.getElementById("custom-modal-mobile-text-content");
+
+    let mobileContainer = document.querySelector(".custom-modal-content-mobile");
+
+    let selectedImage = document.getElementById("mobile-image");
+
+    let buttonContainer = document.getElementById("mobile-thumbnail-container");
+
+    mobileContent.innerHTML = `
+                <h2>${obj.title}</h2>
+                  <p>${obj.description}</p>
+                  <p class="text-bold">Frontend code:</p>
+                  <p>${obj.frontend}</p>
+                  <p class="text-bold">Backend code:</p>
+                  <p>${obj.backend}</p>
+    `
+
+    selectedImage.setAttribute("src", obj.images[0]);
+
+
+    while(buttonContainer.firstElementChild){
+        buttonContainer.firstElementChild.replaceWith(buttonContainer.firstElementChild.cloneNode(true));
+        buttonContainer.removeChild(buttonContainer.firstElementChild);
+    }
+
+    for(let i = 0; i < obj.images.length; i++)
+    {
+        let div = document.createElement("div");
+        div.setAttribute("class","circle");
+        div.addEventListener("click", ()=>{
+            if(i==0){
+                mobileContainer.style.backgroundColor="#3282B8";
+                mobileContent.style.display="block";
+                selectedImage.style.display = "none";
+            }
+            else{
+                selectedImage.setAttribute("src",obj.images[i]);
+                selectedImage.style.display = "block";
+                mobileContainer.style.backgroundColor="transparent";
+                mobileContent.style.display="none";
+            }  
+        });
+        buttonContainer.appendChild(div);
+    }
+}
 
 
 let data = [
@@ -95,45 +191,3 @@ let data = [
         images:['./images/dialogue1.png','./images/dialogue2.png','./images/dialogue3.png']
     }
 ];
-
-function findEntry(id){
-    return data.filter((element)=>{
-        if(element.id == id)
-            return element;
-    });
-}
-
-function populateModal(obj)
-{
-    let leftContent = document.querySelector(".custom-modal-content-left");
-
-    let selectedImage = document.getElementById("selected-image");
-
-    leftContent.innerHTML = `
-                <h2>${obj.title}</h2>
-                  <p>${obj.description}</p>
-                  <p class="text-bold">Frontend code:</p>
-                  <p>${obj.frontend}</p>
-                  <p class="text-bold">Backend code:</p>
-                  <p>${obj.backend}</p>
-    `
-
-    selectedImage.setAttribute("src", obj.images[0]);
-
-
-    while(buttonContainer.firstElementChild){
-        buttonContainer.firstElementChild.replaceWith(buttonContainer.firstElementChild.cloneNode(true));
-        buttonContainer.removeChild(buttonContainer.firstElementChild);
-    }
-
-    for(let i = 0; i < obj.images.length; i++)
-    {
-        let div = document.createElement("div");
-        div.setAttribute("class","circle");
-        div.addEventListener("click", ()=>{
-            selectedImage.setAttribute("src",obj.images[i]);
-        });
-        buttonContainer.appendChild(div);
-    }
-
-}
