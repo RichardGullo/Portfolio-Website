@@ -104,6 +104,10 @@ function populateMobile(obj)
         buttonContainer.removeChild(buttonContainer.firstElementChild);
     }
 
+    mobileContainer.style.backgroundColor="#3282B8";
+    mobileContent.style.display="block";
+    selectedImage.style.display = "none";
+
     for(let i = -1; i < obj.images.length; i++)
     {
         let div = document.createElement("div");
