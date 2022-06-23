@@ -156,7 +156,8 @@ let data = [
         title:`API Sandbox`,
         description:`API Sandbox is a website that allows users to select from a list of APIs and then type a term/query to make a reqest and populate the results to the screen.`,
         frontend:'HTML, CSS, JavaScript, and Bootstrap',
-        images:['./images/api-sandbox.png','./images/api-sandbox2.png','./images/api-sandbox3.png']
+        images:['./images/api-sandbox.png','./images/api-sandbox2.png','./images/api-sandbox3.png'],
+        backend:'Node'
     },
     {
         id:4,
