@@ -1,5 +1,8 @@
 let customModal = document.getElementById("custom-modal");
 
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Dom content is loaded");
+  });
 
 function handeClick(evt){
 
