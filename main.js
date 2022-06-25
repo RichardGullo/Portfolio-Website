@@ -154,7 +154,7 @@ let data = [
         id:2,
         title:`Danny's Yogurt`,
         description: `Danny's Yogurt is a fictional yogurt restaurant.`,
-        frontend:'HTML, CSS, JavaScript, Boostrap',
+        frontend:'HTML, CSS, JavaScript, Bootstrap',
         backend:'PHP, WordPress',
         images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png']
     },
@@ -178,7 +178,7 @@ let data = [
         id:5,
         title:'Flower Power Web',
         description:`This is the web version of Flower Power. Flower power is a management tool that helps you keep track of your plants.`,
-        frontend:'React Native',
+        frontend:'React',
         backend:'PHP',
         images:['./images/flower-power-web.png','./images/flower-power-web2.png','./images/flower-power-web3.png','./images/flower-power-web4.png','./images/flower-power-web5.png']
     },
