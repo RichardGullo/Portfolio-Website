@@ -156,7 +156,7 @@ let data = [
         description: `Danny's Yogurt is a fictional yogurt restaurant.`,
         frontend:'HTML, CSS, JavaScript, Bootstrap',
         backend:'PHP, WordPress',
-        images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png']
+        images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt6.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png']
     },
     {
         id:3,
