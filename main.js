@@ -56,7 +56,8 @@ function populateModal(obj)
                   <p>${obj.frontend}</p>
                   <p class="text-bold">Backend code:</p>
                   <p>${obj.backend}</p>
-    `
+                  <a href="${obj.github}" target="_blank" class="btn git-button">Github Repository</a>
+    `;
 
     selectedImage.setAttribute("src", obj.images[0]);
 
@@ -97,6 +98,7 @@ function populateMobile(obj)
                   <p>${obj.frontend}</p>
                   <p class="text-bold">Backend code:</p>
                   <p>${obj.backend}</p>
+                  <a href="${obj.github}" target="_blank" class="btn git-button">Github Repository</a>
     `
 
     selectedImage.setAttribute("src", obj.images[0]);
@@ -140,7 +142,8 @@ let data = [
         description: 'Jadar is a well designed contact managment systems. Users can create, read, update, and delete users from a database.',
         frontend:'HTML, CSS, JavaScript, and Bootstrap',
         backend:'PHP',
-        images:['./images/jadar.png','./images/jadar4.png','./images/jadar2.png', './images/jadar3.png']
+        images:['./images/jadar.png','./images/jadar4.png','./images/jadar2.png', './images/jadar3.png'],
+        github:"https://github.com/RichardGullo/CMS-Project"
     },
     {
         id:1,
@@ -148,7 +151,8 @@ let data = [
         description:'Autograder is an electron application that helps users grade programming assignments.',
         frontend:'HTML, CSS, Bootstrap, Electron',
         backend:'Electron',
-        images:['./images/autograder.png','./images/autograder-2.png','./images/autograder-3.png','./images/autograder-4.png','./images/autograder-5.png']
+        images:['./images/autograder.png','./images/autograder-2.png','./images/autograder-3.png','./images/autograder-4.png','./images/autograder-5.png'],
+        github:"https://github.com/RichardGullo/autograder-electron-project"
     },
     {
         id:2,
@@ -156,7 +160,8 @@ let data = [
         description: `Danny's Yogurt is a fictional yogurt restaurant.`,
         frontend:'HTML, CSS, JavaScript, Bootstrap',
         backend:'PHP, WordPress',
-        images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt6.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png']
+        images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt6.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png'],
+        github:"https://github.com/RichardGullo/Dannys-Yogurt"
     },
     {
         id:3,
@@ -164,7 +169,8 @@ let data = [
         description:`API Sandbox is a website that allows users to select from a list of APIs and then type a term/query to make a reqest and populate the results to the screen.`,
         frontend:'React',
         images:['./images/api-sandbox.png','./images/api-sandbox2.png','./images/api-sandbox3.png'],
-        backend:'Node'
+        backend:'Node',
+        github:'https://github.com/RichardGullo/API-React-Sandbox'
     },
     {
         id:4,
@@ -172,7 +178,8 @@ let data = [
         description:`This is the mobile version of Flower Power. Flower power is a management tool that helps you keep track of your plants.`,
         frontend:'React Native',
         backend:'PHP',
-        images:['./images/flower-power-mobile.png', './images/flower-power-mobile2.png','./images/flower-power-mobile3.png','./images/flower-power-mobile4.png','./images/flower-power-mobile5.png']
+        images:['./images/flower-power-mobile.png', './images/flower-power-mobile2.png','./images/flower-power-mobile3.png','./images/flower-power-mobile4.png','./images/flower-power-mobile5.png'],
+        github:'https://github.com/RichardGullo/Flower-Power-Mobile'
     },
     {
         id:5,
@@ -180,7 +187,8 @@ let data = [
         description:`This is the web version of Flower Power. Flower power is a management tool that helps you keep track of your plants.`,
         frontend:'React',
         backend:'PHP',
-        images:['./images/flower-power-web.png','./images/flower-power-web2.png','./images/flower-power-web3.png','./images/flower-power-web4.png','./images/flower-power-web5.png']
+        images:['./images/flower-power-web.png','./images/flower-power-web2.png','./images/flower-power-web3.png','./images/flower-power-web4.png','./images/flower-power-web5.png'],
+        github:'https://github.com/RichardGullo/Flower-Power-Web'
     },
     {
         id:6,
@@ -188,7 +196,8 @@ let data = [
         description:`Frozen Bottom Caves is a dungeon crawler game where you are board piece on a board and are given a set of choices, and based off those choices the story of the games moves in a certain direction - good or bad. `,
         frontend:'Unity',
         backend:'',
-        images:['./images/frozen-bottom0.png','./images/frozen-bottom1.png','./images/frozen-bottom2.png','./images/frozen-bottom3.png','./images/frozen-bottom4.png']
+        images:['./images/frozen-bottom0.png','./images/frozen-bottom1.png','./images/frozen-bottom2.png','./images/frozen-bottom3.png','./images/frozen-bottom4.png'],
+        github:'https://github.com/RichardGullo/FrozenBottomCaves-Team-Project'
     },
     {
         id:7,
@@ -196,6 +205,7 @@ let data = [
         description:`This is just a console application that simulates dialogue using graph theory. `,
         frontend:'C#',
         backend:'',
-        images:['./images/dialogue1.png','./images/dialogue2.png','./images/dialogue3.png']
+        images:['./images/dialogue1.png','./images/dialogue2.png','./images/dialogue3.png'],
+        github:'https://github.com/RichardGullo/Console-Dialogue-System'
     }
 ];
