@@ -148,7 +148,7 @@ let data = [
     {
         id:1,
         title:`Autograder`,
-        description:'Autograder is an electron application that helps users grade programming assignments.',
+        description:'Autograder is an electron application that helps professors grade programming assignments.',
         frontend:'HTML, CSS, Bootstrap, Electron',
         backend:'Electron',
         images:['./images/autograder.png','./images/autograder-2.png','./images/autograder-3.png','./images/autograder-4.png','./images/autograder-5.png'],
@@ -157,7 +157,7 @@ let data = [
     {
         id:2,
         title:`Danny's Yogurt`,
-        description: `Danny's Yogurt is a fictional yogurt restaurant.`,
+        description: `Danny's Yogurt is a fictional yogurt restaurant. It is customizable using Advanced Custom Fields.`,
         frontend:'HTML, CSS, JavaScript, Bootstrap',
         backend:'PHP, WordPress',
         images:['./images/danny-yogurt.png','./images/danny-yogurt5.png','./images/danny-yogurt6.png','./images/danny-yogurt2.png','./images/danny-yogurt3.png','./images/danny-yogurt4.png'],
