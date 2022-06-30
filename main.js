@@ -139,7 +139,7 @@ let data = [
     {
         id:0,
         title:'Jadar',
-        description: 'Jadar is a well designed contact managment systems. Users can create, read, update, and delete users from a database.',
+        description: 'Jadar is a well designed contact managment system. Users can create, read, update, and delete users from a database.',
         frontend:'HTML, CSS, JavaScript, and Bootstrap',
         backend:'PHP',
         images:['./images/jadar.png','./images/jadar4.png','./images/jadar2.png', './images/jadar3.png'],
