@@ -3,6 +3,10 @@
   padding:0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p{
   margin:0px;
   font-size: 24px;
