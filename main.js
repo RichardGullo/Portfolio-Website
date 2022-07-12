@@ -59,6 +59,7 @@ function populateModal(obj)
                   <a href="${obj.github}" target="_blank" class="btn git-button">Github Repository</a>
     `;
 
+    
     selectedImage.setAttribute("src", obj.images[0]);
 
 
