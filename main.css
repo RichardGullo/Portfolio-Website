@@ -73,6 +73,7 @@ h3{
 #resume-button{
   background-color: #BBE1FA;
   color:black !important;
+  padding-bottom: 5px;
 }
 
 /* Project images and overlay */
