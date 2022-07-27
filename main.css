@@ -42,6 +42,14 @@ h3{
   color:#BBE1FA
 }
 
+.navbar{
+  padding-left:0px;
+}
+
+.nav-link{
+  margin-right: 10px;
+}
+
 .navbar-brand img{
   height: 60px;
   fill:white;
@@ -53,7 +61,6 @@ h3{
 }
 
 #navbar{
-  padding-left: 20px;
   margin-top: 20px;
 }
 
@@ -68,6 +75,15 @@ h3{
 .navbar-nav a:hover{
   text-decoration: underline;
 
+}
+
+.navbar-expand-sm .navbar-nav .nav-link{
+  padding-left:0;
+}
+
+
+navbar navbar-expand-sm navbar-dark{
+  padding-left:0;
 }
 
 #resume-button{
@@ -256,5 +272,20 @@ h3{
     display: none;
   }
 
+}
+
+.card{
+  margin-bottom: 50px;
+}
+.card-title{
+  text-align: center;
+  color:black;
+  font-size:25px;
+}
+
+.card-text{
+  text-align: center;
+  color:black;
+  font-size:20px;
 }
 
