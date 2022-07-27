@@ -303,3 +303,7 @@ navbar navbar-expand-sm navbar-dark{
   color:#BBE1FA;
 }
 
+.card .btn{
+  margin-top:10px;
+}
+
