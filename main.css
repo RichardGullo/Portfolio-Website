@@ -289,3 +289,17 @@ navbar navbar-expand-sm navbar-dark{
   font-size:20px;
 }
 
+.card-img-top{
+
+  
+}
+
+.btn{
+  background-color:#0F4C75;
+  color:#fff;
+}
+
+.btn:hover{
+  color:#BBE1FA;
+}
+
