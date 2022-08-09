@@ -92,119 +92,6 @@ navbar navbar-expand-sm navbar-dark{
   padding-bottom: 5px;
 }
 
-/* Project images and overlay */
-
-.project-content{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.image-container{
-  position: relative;
-  height:100%;
-}
-
-.project-content img{
-  width:250px;
-  height:250px;
-  object-fit: contain;
-  padding:20px;
-  border:2px solid #475c6b;
-}
-
-.overlay-content{
-  opacity: 0;
-  background-color: rgba(50, 130, 184,0.5);
-  position: absolute;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height:100%;
-  top:0;
-  left:0;
-  z-index: 105;
-}
-
-.item-overlay{
-  background-color: dodgerblue;
-  position: absolute;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  z-index: 200;
-  background-color: rgba(50, 130, 184,0);
-}
-
-.overlay-content img{
-  border:none
-}
-
-.overlay-content:hover{
-  opacity: 1;
-}
-
-/* Popup Modal */
-
-.custom-modal{
-  position: fixed;
-  max-width:1200px;
-  width:100%;
-  height:700px;
-  background-color: #0F4C75;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  z-index: 300;
-  border-radius: 15px;
-  display: none;
-}
-
-.custom-modal-content-left{
-  width:500px;
-  height:500px;
-  background-color: #3282B8;
-  padding-left: 20px;
-  padding-top: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-
-.custom-modal-content-right{
-  position: relative;
-}
-
-.close-icon{
-  height:30px;
-  position: absolute;
-  right:5px;
-  top:5px;
-  cursor: pointer;
-  z-index: 301;
-}
-
-.thumbnail-container{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom:-30;
-  left:0;
-  width:500px;
-}
-
-#mobile-thumbnail-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  bottom:-50;
-  left:0;
-  width:500px;
-}
-
 .circle{
   border-radius: 50%;
   height:20px;
@@ -218,26 +105,8 @@ navbar navbar-expand-sm navbar-dark{
   display: block;
 }
 
-.custom-modal-content-mobile{
-  display: none;
-  width:500px;
-  height:500px;
-  background-color: #3282B8;
-  padding-left: 20px;
-  padding-top: 20px;
-  border-radius: 10px;
-  position: relative;
-}
-
-#custom-modal-mobile-text-content{
-  
-}
-
-#mobile-image{
-  display: none;
-}
-
 /* Components  */
+
 .git-button{
   background-color:#BBE1FA ;
   color:#0F4C75;
@@ -251,27 +120,6 @@ navbar navbar-expand-sm navbar-dark{
 
 .git-button:hover{
   color:black;
-}
-
-
-@media screen and (max-width:1024px){
-
-  .custom-modal-content-right{
-    display: none !important;
-  }
-
-  .custom-modal-content-left{
-    display: none !important;
-  }
-
-  .custom-modal-content-mobile{
-    display: block;
-  }
-
-  #download-icon{
-    display: none;
-  }
-
 }
 
 .card{
@@ -307,3 +155,35 @@ navbar navbar-expand-sm navbar-dark{
   margin-top:10px;
 }
 
+.left-arrow{
+  color:rgba(15, 76, 117, 0.3); position:absolute; top:50%; left:10px; transform: (0%, -50%);
+  display: none;
+}
+
+.left-arrow:hover{
+  color:#0f4c75;
+  cursor: pointer;
+}
+
+.right-arrow{
+  color:rgba(15, 76, 117, 0.3);  position:absolute; top:50%; right:10px; transform: (0%, -50%);
+  cursor: pointer;
+  display: none;
+}
+
+.right-arrow:hover{
+  color:#0f4c75;
+}
+
+.show-hide{
+  display: block;
+}
+
+
+@media screen and (max-width:1024px){
+
+  #download-icon{
+    display: none;
+  }
+
+}

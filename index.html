@@ -3,10 +3,12 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-   <link rel="stylesheet" href="main.css" />
+   
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+   <link rel="stylesheet" href="main.css" />
    <title>Richard Gullo Portfolio Page</title>
 </head>
 
@@ -27,21 +29,27 @@
                style="text-decoration:none; font-size: 30px;" id="resume-button" target="_blank" download>Resume <img src="./images/download.svg" alt="download icon" style="height:35px; color:white;" id="download-icon"/></a>
          </div>
       </nav>
-      <div class="row" style="margin-top:20px;" id="home">
-         <div class="col">
+      <div style="margin-top:20px;" id="home">
+  
             <h2>Richard Gullo</h2>
-            <h3>Computer Science Student</h2>
+            <h3>Computer Science Student</h3>
                <p style="width:64%">I am a computer science major at the University of Central Florida. I have experience working on both the frontend and backend of web and desktop applications.</p>
                </p>
-         </div>
+         
       </div>
     
       <div style="margin-top:30px;">
          <h2 id="projects">Projects</h2>
          <h3>HTML/CSS/JavaScript/Bootstrap</h3>
          <div class="row" style="margin-top:20px;">
-            <div class="card mr-5" style="width: 20rem;">
-              <img class="card-img-top" src="./images/jadar.png" alt="Card image cap">
+            <div class="project-item card mr-5" style="width: 20rem;" data-id="0" data-count="0">
+              <div style="position:relative;">
+                <img class="card-img-top" src="./images/jadar.png" alt="Card image cap">
+                <i class="left-arrow fa-solid fa-arrow-left display-4" data-id="0" data-action="left-arrow"></i>
+                <i class="right-arrow fa-solid fa-arrow-right display-4" data-id="0" data-action="right-arrow"></i>
+              </div>
+    
+           
               <div class="card-body">
                 <h5 class="card-title">JADAR</h5>
                 <p class="card-text">Jadar is a well designed contact managment system. Users can create, read, update, and delete contacts from a database.</p>
@@ -51,8 +59,13 @@
                 
               </div>
             </div>
-            <div class="card mr-5 align-self-start" style="width: 20rem;">
-              <img class="card-img-top" src="./images/autograder.png" alt="Card image cap">
+            <div class="project-item  card mr-5 align-self-start" style="width: 20rem;" data-id="1" data-count="0">
+              <div style="position: relative;">
+                <img class="card-img-top" src="./images/autograder.png" alt="Card image cap">
+                <i class="left-arrow fa-solid fa-arrow-left display-4" data-id="1" data-action="left-arrow"></i>
+                <i class="right-arrow fa-solid fa-arrow-right display-4" data-id="1" data-action="right-arrow"></i>
+              </div>
+      
               <div class="card-body">
                 <h5 class="card-title">Autograder</h5>
                 <p class="card-text">Autograder is an electron application that helps professors grade programming assignments.</p>
@@ -68,8 +81,13 @@
       <div style="margin-top:30px;">
          <h3>React/ React Native</h3>
          <div class="row" style="margin-top:20px;">
-            <div class="card mr-5" style="width: 20rem;">
-              <img class="card-img-top" src="./images/flower-power-mobile.png" alt="Card image cap">
+            <div class="project-item  card mr-5" style="width: 20rem;" data-id="2" data-count="0">
+              <div style="position: relative;">
+                <img class="card-img-top" src="./images/flower-power-mobile.png" alt="Card image cap">
+                <i class="left-arrow fa-solid fa-arrow-left display-4"  data-id="2" data-action="left-arrow"></i>
+                  <i class="right-arrow fa-solid fa-arrow-right display-4" data-id="2" data-action="right-arrow"></i>
+              </div>
+           
               <div class="card-body">
                 <h5 class="card-title">Flower Power Mobile</h5>
                 <p class="card-text">This is the mobile version of Flower Power. Flower power is a management tool that helps you keep track of your plants.</p>
@@ -79,8 +97,14 @@
                 
               </div>
             </div>
-            <div class="card align-self-start" style="width: 20rem;">
-              <img class="card-img-top" src="./images/flower-power-web.png" alt="Card image cap">
+            <div class="project-item  card align-self-start" style="width: 20rem;" data-id="3" data-count="0">
+              <div style="position:relative;">
+                <img class="card-img-top" src="./images/flower-power-web.png" alt="Card image cap">
+                <i class="left-arrow fa-solid fa-arrow-left display-4"  data-id="3" data-action="left-arrow"></i>
+                <i class="right-arrow fa-solid fa-arrow-right display-4"  data-id="3" data-action="right-arrow"></i>
+
+              </div>
+          
               <div class="card-body">
                 <h5 class="card-title">Flower Power Web</h5>
                 <p class="card-text">This is the web version of Flower Power. Flower power is a management tool that helps you keep track of your plants.</p>
@@ -98,8 +122,13 @@
       <div style="margin-top:30px;">
          <h3>WordPress</h3>
          <div class="row" style="width: 20rem;">
-            <div class="card mr-5" style="width: 18rem;">
-              <img class="card-img-top" src="./images/danny-yogurt.png" alt="Card image cap">
+            <div class="project-item  card mr-5" style="width: 18rem;" data-id="4" data-count="0">
+              <div style="position: relative;">
+                <img class="card-img-top" src="./images/danny-yogurt.png" alt="Card image cap">
+                <i class="left-arrow fa-solid fa-arrow-left display-4"  data-id="4" data-action="left-arrow"></i>
+                <i class="right-arrow fa-solid fa-arrow-right display-4"  data-id="4" data-action="right-arrow"></i>
+              </div>
+     
               <div class="card-body">
                 <h5 class="card-title">Danny's Yogurt</h5>
                 <p class="card-text">Danny's Yogurt is a fictional yogurt restaurant. It is customizable using Advanced Custom Fields.</p>
@@ -116,8 +145,13 @@
 <div style="margin-top:30px;">
       <h3>C# / Unity</h3>
       <div class="row" style="margin-top:20px;">
-         <div class="card mr-5" style="width: 20rem;">
-           <img class="card-img-top" src="./images/frozen-bottom0.png" alt="Card image cap">
+         <div class="project-item  card mr-5" style="width: 20rem;" data-id="5" data-count="0">
+          <div style="position: relative;">
+            <img class="card-img-top" src="./images/frozen-bottom0.png" alt="Card image cap">
+            <i class="left-arrow fa-solid fa-arrow-left display-4"  data-id="5" data-action="left-arrow"></i>
+            <i class="right-arrow fa-solid fa-arrow-right display-4"  data-id="5" data-action="right-arrow"></i>
+          </div>
+       
            <div class="card-body">
              <h5 class="card-title">Frozen Bottom Caves</h5>
              <p class="card-text">Frozen Bottom Caves is a dungeon crawler game where you are board piece on a board and are given a set of choices, and based off those choices the story of the games moves in a certain direction - good or bad. </p>
@@ -128,8 +162,13 @@
            </div>
          </div>
 
-         <div class="card align-self-start" style="width: 20rem;">
-           <img class="card-img-top" src="./images/dialogue1.png" alt="Card image cap">
+         <div class="project-item  card align-self-start" style="width: 20rem;" data-id="6" data-count="0">
+          <div style="position: relative;">
+            <img class="card-img-top" src="./images/dialogue1.png" alt="Card image cap">
+            <i class="left-arrow fa-solid fa-arrow-left display-4"  data-id="6" data-action="left-arrow"></i>
+            <i class="right-arrow fa-solid fa-arrow-right display-4"  data-id="6" data-action="right-arrow"></i>
+          </div>
+       
            <div class="card-body">
              <h5 class="card-title">Console Dialogue</h5>
              <p class="card-text">Console application that simulates dialogue using graph theory.</p>
