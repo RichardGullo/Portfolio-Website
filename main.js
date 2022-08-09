@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Dom content is loaded");
-  });
+});
 
 let projectItems = document.getElementsByClassName("project-item");
 
+// Logic to toggle arrows on project items
 for(let i = 0; i < projectItems.length; i++){
     let leftArrow = projectItems[i].getElementsByClassName("left-arrow");
     let rightArrow = projectItems[i].getElementsByClassName("right-arrow");
@@ -18,6 +19,7 @@ for(let i = 0; i < projectItems.length; i++){
     });
 }
 
+// Function used to execute function on clicks.
 function handeClick(evt){
 
     let{action,id} = evt.target.dataset;
@@ -49,6 +51,7 @@ function findEntry(id){
     });
 }
 
+// Function used to get next image 
 function getNextImage(id, image, projectItem, action){
     
     let n = data[id].images.length;
