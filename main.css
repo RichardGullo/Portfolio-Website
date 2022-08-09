@@ -124,6 +124,7 @@ navbar navbar-expand-sm navbar-dark{
 
 .card{
   margin-bottom: 50px;
+  width:23rem;
 }
 .card-title{
   text-align: center;
